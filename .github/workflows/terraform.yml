@@ -18,4 +18,8 @@ jobs:
     # Terraform init
     - name: Terraform Init
       id: init
-      run: terraform init
+      run: terraform init 
+    
+    - name: Terraform Plan
+      id: plan
+      run: terraform plan -no-color
