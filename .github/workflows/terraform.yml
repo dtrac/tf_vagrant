@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run terraform fmt check
-      run: terraform fmt -check -diff -recursive ./terraform
+      run: terraform fmt -check -diff -recursive
 
     # Terraform init
     - name: Terraform Init
